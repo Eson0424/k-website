@@ -1,0 +1,78 @@
+/*
+ * Stylus here compiles directly to CSS rules.
+ * Make sure this file is only imported once in the composition of every page.
+ */
+@require 'shared/index'
+
+html
+body
+  overflow: visible // Overriding Muse-UI, needed by NPM stickybits
+
+body
+  margin 0
+  padding 0
+  or-font-families()
+  -webkit-font-smoothing: subpixel-antialiased
+  -moz-osx-font-smoothing: grayscale
+
+// Openrice themes
+or-theme('y', $y, $bgy)
+or-theme('g', $g, $w)
+or-theme('o', $o, $w)
+or-theme('or', $or, $w)
+or-theme('od', $od, $w)
+or-theme('bgy', $bgy, $w)
+or-theme('bu', $bu, $w)
+or-theme('w', $w, $bgy)
+or-theme('transparent', $color-transparent, $bgy)
+or-theme('facebook', $bu-facebook, $w)
+or-theme('googleplus', $r-google-plus, $w)
+
+// Removal of browser default styles
+ul
+ol
+  margin: 0
+  padding: 0
+  list-style: none
+a
+  text-decoration: none
+  color inherit
+button
+input[type='button']
+input[type='submit']
+input[type='reset']
+  color: inherit
+  font: inherit
+  padding: 0
+  background: none
+  border: none
+  border-radius: 0
+  outline: none
+  cursor: pointer // OR design
+
+.text-button
+  text-align: center
+  margin-top: 20px
+  or-font($dgy, 16px)
+  display: block
+
+.page-overlay
+  page-overlay()
+
+.htmlblock-debug-msg-container
+  display: none
+
+.only-printable-element
+.only-printable-inline-element
+  display: none
+
+@media print
+  .only-printable-element
+    display: block
+
+  .only-printable-inline-element
+    display: inline-block
+
+  .non-printable-element
+    visibility: hidden !important
+    display: none !important
