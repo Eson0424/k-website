@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <router-view>
+      <component :is="importer['desktop']"></component>
     </router-view>
-    <!-- <component :is="importer['desktop']"></component> -->
   </div>
 </template>
 
