@@ -55,7 +55,7 @@ export default {
 @require '~@/stylus/shared/index'
   .footer
     width 100%
-    padding-top 120px
+    padding 120px 0 50px
     color $w
     background-color #120f0f
 
