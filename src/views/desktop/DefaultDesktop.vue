@@ -79,11 +79,187 @@
           </li>
         </ul>
       </div>
-      <div class="works-section"></div>
-      <div class="gallery-section"></div>
-      <div class="production-section"></div>
-      <div class="customers-section"></div>
-      <div class="blog-section"></div>
+      <div class="works-section">
+        <div class="works-content">
+          <div class="msg">
+            <div class="badge">Discover</div>
+            <div class="title">BEST COFFEE SELLERS</div>
+            <div class="desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+          </div>
+          <div class="detail">
+            <ul class="works-list">
+              <li class="works-list-item">
+                <div class="item-icon">
+                  <img src="../../assets/images/menu-1.jpg">
+                </div>
+                <div class="item-info">
+                  <div class="info-title">COFFEE CAPUCCINO</div>
+                  <div class="info-desc">A small river named Duden flows by their place and supplies</div>
+                  <div class="info-price">$5.90</div>
+                </div>
+                <el-button>Add to Cart</el-button>
+              </li>
+              <li class="works-list-item">
+                <div class="item-icon">
+                  <img src="../../assets/images/menu-2.jpg">
+                </div>
+                <div class="item-info">
+                  <div class="info-title">COFFEE CAPUCCINO</div>
+                  <div class="info-desc">A small river named Duden flows by their place and supplies</div>
+                  <div class="info-price">$5.90</div>
+                </div>
+                <el-button>Add to Cart</el-button>
+              </li>
+              <li class="works-list-item">
+                <div class="item-icon">
+                  <img src="../../assets/images/menu-3.jpg">
+                </div>
+                <div class="item-info">
+                  <div class="info-title">COFFEE CAPUCCINO</div>
+                  <div class="info-desc">A small river named Duden flows by their place and supplies</div>
+                  <div class="info-price">$5.90</div>
+                </div>
+                <el-button>Add to Cart</el-button>
+              </li>
+              <li class="works-list-item">
+                <div class="item-icon">
+                  <img src="../../assets/images/menu-4.jpg">
+                </div>
+                <div class="item-info">
+                  <div class="info-title">COFFEE CAPUCCINO</div>
+                  <div class="info-desc">A small river named Duden flows by their place and supplies</div>
+                  <div class="info-price">$5.90</div>
+                </div>
+                <el-button>Add to Cart</el-button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-section">
+        <ul class="gallery-list">
+          <li class="gallery-list-item">
+            <img src="../../assets/images/gallery-1.jpg" alt="">
+          </li>
+          <li class="gallery-list-item">
+            <img src="../../assets/images/gallery-2.jpg" alt="">
+          </li>
+          <li class="gallery-list-item">
+            <img src="../../assets/images/gallery-3.jpg" alt="">
+          </li>
+          <li class="gallery-list-item">
+            <img src="../../assets/images/gallery-4.jpg" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="production-section">
+        <div class="production-content">
+          <div class="msg">
+            <div class="badge">Discover</div>
+            <div class="title">OUR PRODUCTS</div>
+            <div class="desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+          </div>
+          <div class="products">
+            <div class="nav-bar-list">
+              <div class="nav-bar-list-item active">Main Dish</div>
+              <div class="nav-bar-list-item">Drinks</div>
+              <div class="nav-bar-list-item">Desserts</div>
+            </div>
+            <div class="detail-list">
+              <div class="detail-list-item">
+                <div class="item-icon">
+                  <img src="../../assets/images/dish-1.jpg">
+                </div>
+                <div class="item-info">
+                  <div class="info-title">Grilled Beef</div>
+                  <div class="info-desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</div>
+                  <div class="info-price">$5.90</div>
+                </div>
+                <el-button>Add to Cart</el-button>
+              </div>
+              <div class="detail-list-item">
+                <div class="item-icon">
+                  <img src="../../assets/images/dish-2.jpg">
+                </div>
+                <div class="item-info">
+                  <div class="info-title">GRILLED BEEF</div>
+                  <div class="info-desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</div>
+                  <div class="info-price">$5.90</div>
+                </div>
+                <el-button>Add to Cart</el-button>
+              </div>
+              <div class="detail-list-item">
+                <div class="item-icon">
+                  <img src="../../assets/images/dish-3.jpg">
+                </div>
+                <div class="item-info">
+                  <div class="info-title">GRILLED BEEF</div>
+                  <div class="info-desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</div>
+                  <div class="info-price">$5.90</div>
+                </div>
+                <el-button>Add to Cart</el-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="customers-section">
+        <div class="mask"></div>
+        <div class="customers-contain">
+          <div class="msg">
+            <div class="badge">Testimony</div>
+            <div class="title">CUSTOMERS SAYS</div>
+            <div class="desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+          </div>
+          <div class="customers-says">
+            <div class="says-item"></div>
+            <div class="says-item"></div>
+            <div class="says-item"></div>
+            <div class="says-item"></div>
+            <div class="says-item"></div>
+          </div>
+        </div>
+      </div>
+      <div class="blog-section">
+        <div class="blog-content">
+          <div class="msg">
+            <div class="title">RECENT FROM BLOG</div>
+            <div class="desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+          </div>
+          <div class="blog-list">
+            <div class="blog-list-item">
+              <div class="item-icon">
+                  <img src="../../assets/images/image_1.jpg">
+                </div>
+                <div class="item-info">
+                  <div class="info-date">Sept 10, 2018 Admin</div>
+                  <div class="info-title">The Delicious Pizza</div>
+                  <div class="info-desc">A small river named Duden flows by their place and supplies it with the necessary regelialia.</div>
+                </div>
+            </div>
+            <div class="blog-list-item">
+              <div class="item-icon">
+                  <img src="../../assets/images/image_2.jpg">
+                </div>
+                <div class="item-info">
+                  <div class="info-date">Sept 10, 2018 Admin</div>
+                  <div class="info-title">The Delicious Pizza</div>
+                  <div class="info-desc">A small river named Duden flows by their place and supplies it with the necessary regelialia.</div>
+                </div>
+            </div>
+            <div class="blog-list-item">
+              <div class="item-icon">
+                  <img src="../../assets/images/image_3.jpg">
+                </div>
+                <div class="item-info">
+                  <div class="info-date">Sept 10, 2018 Admin</div>
+                  <div class="info-title">The Delicious Pizza</div>
+                  <div class="info-desc">A small river named Duden flows by their place and supplies it with the necessary regelialia.</div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <Footer></Footer>
   </div>
@@ -213,6 +389,7 @@ export default {
             border-color #c49b63
             background-color #c39a63
             color $bgy
+
     .our-story-section
       height 672px
       width 100%
@@ -400,17 +577,314 @@ export default {
 
     .works-section
       height 681px
+      padding 105px 0
+      background #0f0f11
+      color $w
+
+      .works-content
+        width 681px
+        margin 0 auto
+
+        .msg
+          text-align center
+          .badge
+            font-size 50px
+            display block
+            margin-bottom 0
+            color #c49b63
+            line-height 1
+            margin-bottom -21px
+          
+          .title
+            font-size 40px
+            font-weight 700
+            position relative
+
+          .desc
+            font-size 17px
+            line-height 1.8
+            font-weight 300
+            color $dgy
+            margin 20px 0 50px
+        
+        .detail
+          text-align center
+
+          .works-list
+            display flex
+            justify-content space-around
+            align-items center
+
+            &-item
+              margin-right 50px
+
+              .item-icon
+                width 255px
+                height 200px
+                overflow hidden
+                img
+                  height 100%
+
+              .item-info
+                .info-title
+                  margin 20px 0 10px
+                  font-size 18px
+                  line-height 1.4
+                
+                .info-desc
+                  font-size 17px
+                  line-height 1.8
+                  font-weight 300
+                  color $dgy
+                
+                .info-price
+                  font-size 18px
+                  line-height 1.8
+                  font-weight 300
+                  margin 10px 0
+
+              .el-button
+                border-radius 0
+                background-color rgba(255, 255, 255, 0)
+                border 1px solid #c49b63
+                color #c49b63
+
+              .el-button:hover
+                border 1px solid transparent
+                background #c49b63
+                color #fff
 
     .gallery-section
       height 300px
+      overflow hidden
+
+      .gallery-list
+        display flex
+
+        &-item
+          flex 1
+
+          img
+            height 100%
 
     .production-section
-      height 985px
+      padding 105px 0
+      background #0f0f11
+      color $w
+
+      .production-content
+        width 681px
+        margin 0 auto
+        
+        .msg
+          text-align center
+          .badge
+            font-size 50px
+            display block
+            margin-bottom 0
+            color #c49b63
+            line-height 1
+            margin-bottom -21px
+          
+          .title
+            font-size 40px
+            font-weight 700
+            position relative
+
+          .desc
+            font-size 17px
+            line-height 1.8
+            font-weight 300
+            color $dgy
+            margin 20px 0 50px
+        
+        .products
+          .nav-bar-list
+            margin-bottom 50px
+            display flex
+            justify-content center
+            align-items center
+
+            &-item
+              cursor pointer
+              height 30px
+              line-height @height
+              padding 10px
+              margin-right 20px
+              border-bottom 1px solid #c49b63
+              color #c49b63
+
+            &-item:hover
+              color $bgy
+              background-color #c49b63
+            
+          .detail-list
+            display flex
+            justify-content space-around
+            align-items center
+
+            &-item
+              text-align center
+              margin-right 50px
+
+              .item-icon
+                width 328px
+                height 270px
+                overflow hidden
+                img
+                  height 100%
+
+              .item-info
+                .info-title
+                  margin 20px 0 10px
+                  font-size 18px
+                  line-height 1.4
+                
+                .info-desc
+                  font-size 17px
+                  line-height 1.8
+                  font-weight 300
+                  color $dgy
+                
+                .info-price
+                  font-size 18px
+                  line-height 1.8
+                  font-weight 300
+                  margin 10px 0
+
+              .el-button
+                border-radius 0
+                background-color rgba(255, 255, 255, 0)
+                border 1px solid #c49b63
+                color #c49b63
+
+              .el-button:hover
+                border 1px solid transparent
+                background #c49b63
+                color #fff
+
 
     .customers-section
+      color $w
+      padding 105px 0
       height 626px
+      background-image url(../../assets/images/bg_1.jpg)
+      position relative
+
+      .mask
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0
+        background #000
+        opacity .5
+      
+      .customers-contain
+
+        .msg
+          width 590px
+          margin 0 auto
+          text-align center
+          .badge
+            font-size 50px
+            display block
+            margin-bottom 0
+            color #c49b63
+            line-height 1
+            margin-bottom -21px
+          
+          .title
+            font-size 40px
+            font-weight 700
+            position relative
+
+          .desc
+            font-size 17px
+            line-height 1.8
+            font-weight 300
+            color $egy
+            margin 20px 0 50px
+
+        .customers-says
+          position absolute
+          bottom 0
+          width 100%
+          height 300px
+          display flex
+
+          .says-item
+            flex 1
+            background-color #c49b63
+            box-shadow 0px 0px 5px #888888
 
     .blog-section
       height 708px
       padding 105px 0
+      background-color #151517
+
+      .blog-content
+        color $w
+        .msg
+          width 590px
+          margin 0 auto
+          text-align center
+          
+          .title
+            font-size 40px
+            font-weight 700
+            position relative
+
+          .desc
+            font-size 17px
+            line-height 1.8
+            font-weight 300
+            color $dgy
+            margin 20px 0 50px
+
+        .blog-list
+          display flex
+          justify-content center
+
+          &-item
+            width 350px
+            padding 0 15px
+
+            .item-icon
+              width 350px
+              height 270px
+              overflow hidden
+
+              img
+                height 100%
+
+            .item-info
+              padding 24px 0
+
+              .info-date
+                color $dgy
+                font-size 15px
+              
+              .info-title
+                cursor pointer
+                font-size 18px
+                margin 16px 0
+                font-weight 700
+              
+              .info-desc
+                font-size 17px
+                line-height 1.8
+                font-weight 300
+                color $dgy
+
+              .info-title:hover
+                color #c49b63
+              
+              .info-title:active
+                color #c49b63
+              
+.active
+  background #c49b63
+  color $bgy !important
+
   </style>
