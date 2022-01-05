@@ -1,10 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
-import tools from './utils/tools/tools'
+// css reset
 import '@/assets/css/reset.css'
+// 引入vue awesome swiper
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+// 使用vue awesome swiper插件
+Vue.use(VueAwesomeSwiper);
 // 引入路由
 import router from '@/router'
-Vue.prototype.tools = tools
 Vue.config.productionTip = false
 new Vue({
   render: h => h(App),

@@ -1,4 +1,4 @@
 module.exports = {
   // close eslint
-  lintOnSave: false,
+  lintOnSave: true,
 }

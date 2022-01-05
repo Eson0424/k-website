@@ -15,22 +15,26 @@ export default new VueRouter({
   // 具体配置
   routes: [{
       path: '/',
-      component: Home
+      redirect: '/home',
     },
     {
       path: '/home',
+      name: 'Home',
       component: Home
     },
     {
       path: '/about',
+      name: 'About',
       component: About
     },
     {
       path: '/login',
+      name: 'Login',
       component: Login
     },
     {
       path: '/register',
+      name: 'Register',
       component: Register
     },
   ],

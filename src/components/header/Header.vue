@@ -51,7 +51,7 @@ export default {
   computed: {},
 
   created() {
-    this.tools.test();
+    
   },
 
   mounted() {
