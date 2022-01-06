@@ -73,7 +73,7 @@
       </ul>
       <div class="footer-content-copyright">
         <p>Copyright © 2021 Someone. All rights reserved.</p>
-        <a href="https://beian.miit.gov.cn/">粤ICP备2020141291号</a>
+        <router-link to="https://beian.miit.gov.cn/">粤ICP备2020141291号-1</router-link>
       </div>
     </div>
   </div>

@@ -3,35 +3,49 @@
     <div class="header-content">
       <div class="header-content-setting">
         <div class="header-content-setting-wrap">
-          <a href="/" class="header-content-setting-logo"></a>
-          <a href="/" class="header-content-setting-title"><span>P</span>rogram <span>M</span>ini <span>S</span>pace</a>
+          <router-link to="/" class="header-content-setting-logo"></router-link>
+          <router-link to="/" class="header-content-setting-title"><span>P</span>rogram <span>M</span>ini <span>S</span>pace</router-link>
         </div>
         <div class="header-content-setting-list">
           <ul class="header-content-setting-list-login">
-            <li class="header-content-setting-list-login-item">Login</li>
-            <li class="header-content-setting-list-login-item">Register</li>
+            <li class="header-content-setting-list-login-item">
+              <router-link class="login-register-link" to="/login">Login / Register</router-link>
+            </li>
             <li class="header-content-setting-list-login-item">Select language</li>
           </ul>
           <ul class="header-content-setting-list-links">
-            <li class="header-content-setting-list-links-item">F</li>
-            <li class="header-content-setting-list-links-item">T</li>
-            <li class="header-content-setting-list-links-item">G</li>
-            <li class="header-content-setting-list-links-item">in</li>
-            <li class="header-content-setting-list-links-item">t</li>
+            <li class="header-content-setting-list-links-item">
+              <router-link class="links-item-router" to="#">F</router-link></li>
+            <li class="header-content-setting-list-links-item">
+              <router-link class="links-item-router" to="#">T</router-link></li>
+            <li class="header-content-setting-list-links-item">
+              <router-link class="links-item-router" to="#">G</router-link></li>
+            <li class="header-content-setting-list-links-item">
+              <router-link class="links-item-router" to="#">in</router-link></li>
+            <li class="header-content-setting-list-links-item">
+              <router-link class="links-item-router" to="#">t</router-link></li>
           </ul>
         </div>
       </div>
       <ul class="header-content-nav-list">
-        <li class="header-content-nav-list-item">HOME</li>
-        <li class="header-content-nav-list-item">ABOUT</li>
-        <li class="header-content-nav-list-item">CLASSIFIED ADS</li>
-        <li class="header-content-nav-list-item">DATABASE</li>
-        <li class="header-content-nav-list-item">NEWS</li>
-        <li class="header-content-nav-list-item">ARTICLES</li>
-        <li class="header-content-nav-list-item">FORUM</li>
-        <li class="header-content-nav-list-item">VIDEO</li>
-        <li class="header-content-nav-list-item">ADVERTISING</li>
-        <li class="header-content-nav-list-item">CONTACTS</li>
+        <li class="header-content-nav-list-item">
+          <router-link to="/home">HOME</router-link>
+        </li>
+        <li class="header-content-nav-list-item">
+          <router-link to="/about">ABOUT</router-link>
+        </li>
+        <li class="header-content-nav-list-item">
+          <router-link to="/database">DATABASE</router-link>
+        </li>
+        <li class="header-content-nav-list-item">
+          <router-link to="/news">NEWS</router-link>
+        </li>
+        <li class="header-content-nav-list-item">
+          <router-link to="/articles">ARTICLES</router-link>
+        </li>
+        <li class="header-content-nav-list-item">
+          <router-link to="/forum">FORUM</router-link>
+        </li>
         <li class="header-content-nav-list-item">HELP LINE : 19879265304</li>
       </ul>
     </div>
@@ -65,6 +79,7 @@ export default {
   .header {
     width: 100%;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
     &-content {
       width: 1280px;
       margin: 0 auto;
@@ -106,6 +121,12 @@ export default {
               &:hover {
                 color: #fff;
                 background-color: #249692;
+                .login-register-link {
+                  color: #fff;
+                }
+                .links-item-router {
+                  color: #249692;
+                }
               }
             }
           }
@@ -114,7 +135,6 @@ export default {
             &-item {
               padding: 0 5px;
               &:hover {
-                color: #249692;
                 background-color: #fff;
               }
             }
@@ -124,7 +144,21 @@ export default {
       &-nav-list {
         display: flex;
         justify-content: space-around;
-        padding: 30px 0;
+        padding: 20px 0;
+        &-item {
+          padding: 10px 5px;
+          border-radius: 2px;
+          a {
+            color: #249692;
+            font-weight: 600;
+          }
+          &:not(:last-child):hover {
+            background-color: #249692;
+            a {
+              color: #fff;
+            }
+          }
+        }
       }
     }
   }

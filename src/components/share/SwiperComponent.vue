@@ -5,7 +5,8 @@
         v-for="item in bannerArr"
         :key="item.id"
         :style="`background-image:url(${item.bgUrl}); height: ${slideHeight};`"
-      ></swiper-slide>
+      >
+      </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
   </div>

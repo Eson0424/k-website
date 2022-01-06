@@ -1,9 +1,12 @@
 <template>
   <div class="main">
-    <Header></Header>
-    <!-- 路由组件出口 -->
-    <router-view></router-view>
-    <Footer></Footer>
+    <Header v-if="showComponent" />
+    <!-- 保留状态，避免重新渲染 -->
+    <keep-alive>
+      <!-- 路由组件出口: 渲染vue-router指定的组件 -->
+      <router-view></router-view>
+    </keep-alive>
+    <Footer v-if="showComponent" />
   </div>
 </template>
 
@@ -11,23 +14,17 @@
 import Header from "@/components/header/Header"
 import Footer from "@/components/footer/Footer"
 export default {
-  data () {
-    return {
-    };
-  },
 
   components: {
     Header,
     Footer,
   },
 
-  computed: {},
-
-  created() {},
-
-  mounted() {},
-
-  methods: {}
+  computed: {
+    showComponent() {
+      return this.$route.meta.show;
+    }
+  },
 }
 
 </script>
