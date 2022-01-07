@@ -26,6 +26,7 @@ import homeRoutes from './home'
 // 引入路由组件
 import About from '@/views/about/About.vue'
 import Login from '@/views/login/Login.vue'
+import Projects from '@/views/projects/Projects.vue'
 // 配置路由
 export default new VueRouter({
   mode: 'history',
@@ -49,6 +50,14 @@ export default new VueRouter({
       component: Login,
       meta: {
         show: false
+      }
+    },
+    {
+      path: '/projects',
+      name: 'Projects',
+      component: Projects,
+      meta: {
+        show: true
       }
     },
   ],

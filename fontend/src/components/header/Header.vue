@@ -35,7 +35,7 @@
           <router-link to="/about">ABOUT</router-link>
         </li>
         <li class="header-content-nav-list-item">
-          <router-link to="/database">DATABASE</router-link>
+          <router-link to="/projects">PROJECTS</router-link>
         </li>
         <li class="header-content-nav-list-item">
           <router-link to="/news">NEWS</router-link>
