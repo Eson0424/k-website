@@ -1,5 +1,9 @@
 <template>
-  <div>this is about</div>
+  <div>
+    <div>count{{ aboutCount }}</div>
+    <button @click="reduce()">click -1</button>
+    <button @click="add()">click +1</button>
+  </div>
 </template>
 
 <script>
@@ -12,13 +16,25 @@ export default {
 
   components: {},
 
-  computed: {},
+  computed: {
+    aboutCount() {
+      return this.$store.state.about.count
+    }
+  },
 
   created() {},
 
   mounted() {},
 
-  methods: {}
+  methods: {
+    add() {
+      // 派发action
+      this.$store.dispatch('add')
+    },
+    reduce() {
+      this.$store.dispatch('reduce')
+    }
+  }
 }
 
 </script>

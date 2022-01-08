@@ -12,7 +12,7 @@ VueRouter.prototype.push = function(location, resolve, reject) {
     }
   }
   // replace
-let originReplace = VueRouter.prototype.push;
+let originReplace = VueRouter.prototype.replace;
 // 重写VueRouter中的push方法
 VueRouter.prototype.replace = function(location, resolve, reject) {
     if (resolve && reject) {
