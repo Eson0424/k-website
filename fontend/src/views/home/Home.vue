@@ -32,49 +32,39 @@
       <div class="home-content-section">
         <div class="home-content-section-left">
           <small> introducing</small>
-          <h2>New Classified</h2>
+          <h2>New User</h2>
         </div>
-        <div class="home-content-section-right">
-          <div class="home-content-section-right-side">
-            <div class="home-content-section-right-side-item">1111</div>
-            <div class="home-content-section-right-side-item">1111</div>
-            <div class="home-content-section-right-side-item">1111</div>
-            <div class="home-content-section-right-side-item">1111</div>
-            <div class="home-content-section-right-side-item">1111</div>
-            <div class="home-content-section-right-side-item">1111</div>
-          </div>
-          <div class="home-content-section-right-part">
-            <div class="home-content-section-right-side-item">2222</div>
-            <div class="home-content-section-right-side-item">2222</div>
-            <div class="home-content-section-right-side-item">2222</div>
-            <div class="home-content-section-right-side-item">2222</div>
-            <div class="home-content-section-right-side-item">2222</div>
-            <div class="home-content-section-right-side-item">2222</div>
-          </div>
-        </div>
+        <ul class="home-content-section-right">
+          <li
+            v-for="item in users" 
+            :key="item.userId" 
+            class="home-content-section-right-item"
+          >
+            <UserItem 
+              :userData="item"
+            />
+          </li>
+        </ul>
       </div>
       <div class="home-content-info"></div>
       <div class="home-content-section">
         <div class="home-content-section-left">
           <small> introducing</small>
-          <h2>Posted Classified</h2>
+          <h2>Posted Demo</h2>
         </div>
         <div class="home-content-section-right">
           <div class="home-content-section-right-setting"></div>
-          <div class="home-content-section-right-content">
-            <div>list</div>
-            <div>list</div>
-            <div>list</div>
-            <div>list</div>
-            <div>list</div>
-            <div>list</div>
-            <div>list</div>
-            <div>list</div>
-            <div>list</div>
-            <div>list</div>
-            <div>list</div>
-            <div>list</div>
-          </div>
+          <ul class="home-content-section-right-content">
+            <li
+              v-for="item in demos"
+              :key="item.demoId"
+              class="home-content-section-right-content-item"
+            >
+              <DemoItem 
+                :demoData="item"
+              />
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -83,6 +73,8 @@
 
 <script>
 import SwiperComponent from '@/components/share/SwiperComponent.vue'
+import UserItem from '@/components/share/UserItem.vue'
+import DemoItem from '@/components/share/DemoItem.vue'
 export default {
   name: 'Name',
   data () {
@@ -122,6 +114,132 @@ export default {
         name: 'axios',
         bgUrl:require('../../assets/images/home/banner/07.jpeg'),
       }],
+      users: [{
+        useId: 1,
+        name: 'jacy',
+        motto: 'Curabitur quisque morbi aspernatu',
+        avatarUrl: require('../../assets/images/home/users/pic1.jpg')
+      },{
+        useId: 2,
+        name: 'eason',
+        motto: 'Et ante eget, cras risus et hymena',
+        avatarUrl: require('../../assets/images/home/users/pic2.jpg')
+      },{
+        useId: 3,
+        name: 'joy',
+        motto: 'just do it',
+        avatarUrl: require('../../assets/images/home/users/pic3.jpg')
+      },{
+        useId: 4,
+        name: 'lucy',
+        motto: 'ac justo et justo pede sapien nam',
+        avatarUrl: require('../../assets/images/home/users/pic4.jpg')
+      },{
+        useId: 5,
+        name: 'leo',
+        motto: 'ac interdum nulla volutpat vestibu',
+        avatarUrl: require('../../assets/images/home/users/pic5.jpg')
+      },{
+        useId: 6,
+        name: 'abe',
+        motto: 'ac interdum nulla volutpat vestibu',
+        avatarUrl: require('../../assets/images/home/users/pic6.jpg')
+      },{
+        useId: 7,
+        name: 'bley',
+        motto: 'ac interdum nulla volutpat vestibu',
+        avatarUrl: require('../../assets/images/home/users/pic7.jpg')
+      },{
+        useId: 8,
+        name: 'che',
+        motto: 'ac interdum nulla volutpat vestibu',
+        avatarUrl: require('../../assets/images/home/users/pic8.jpg')
+      },{
+        useId: 9,
+        name: 'dom',
+        motto: 'ac interdum nulla volutpat vestibu',
+        avatarUrl: require('../../assets/images/home/users/pic9.jpg')
+      },{
+        useId: 10,
+        name: 'flower',
+        motto: 'ac interdum nulla volutpat vestibu',
+        avatarUrl: require('../../assets/images/home/users/pic10.jpg')
+      },{
+        useId: 11,
+        name: 'gigi',
+        motto: 'ac interdum nulla volutpat vestibu',
+        avatarUrl: require('../../assets/images/home/users/pic11.jpg')
+      },{
+        useId: 12,
+        name: 'hola',
+        motto: 'ac interdum nulla volutpat vestibu',
+        avatarUrl: require('../../assets/images/home/users/pic12.jpg')
+      },],
+      demos: [{
+        demoId: 1,
+        category: 1,
+        name: 'demo01',
+        detailUrl: '/',
+        title: 'dolor suspendisse quis non',
+        desc: 'Est sit integer eu magna, ullamcorper mus vel nunc',
+        imgUrl: require('../../assets/images/home/users/pic13.jpg')
+      },{
+        demoId: 2,
+        category: 2,
+        name: 'demo02',
+        detailUrl: '/',
+        title: 'dolor suspendisse quis non',
+        desc: 'Est sit integer eu magna, ullamcorper mus vel nunc',
+        imgUrl: require('../../assets/images/home/users/pic14.jpg')
+      },{
+        demoId: 3,
+        category: 3,
+        name: 'demo03',
+        detailUrl: '/',
+        title: 'dolor suspendisse quis non',
+        desc: 'Est sit integer eu magna, ullamcorper mus vel nunc',
+        imgUrl: require('../../assets/images/home/users/pic15.jpg')
+      },{
+        demoId: 4,
+        category: 2,
+        name: 'demo04',
+        detailUrl: '/',
+        title: 'dolor suspendisse quis non',
+        desc: 'Est sit integer eu magna, ullamcorper mus vel nunc',
+        imgUrl: require('../../assets/images/home/users/pic16.jpg')
+      },{
+        demoId: 5,
+        category: 4,
+        name: 'demo05',
+        detailUrl: '/',
+        title: 'dolor suspendisse quis non',
+        desc: 'Est sit integer eu magna, ullamcorper mus vel nunc',
+        imgUrl: require('../../assets/images/home/users/pic17.jpg')
+      },{
+        demoId: 6,
+        category: 3,
+        name: 'demo06',
+        detailUrl: '/',
+        title: 'dolor suspendisse quis non',
+        desc: 'Est sit integer eu magna, ullamcorper mus vel nunc',
+        imgUrl: require('../../assets/images/home/users/pic18.jpg')
+      },{
+        demoId: 7,
+        category: 4,
+        name: 'demo07',
+        detailUrl: '/',
+        title: 'dolor suspendisse quis non',
+        desc: 'Est sit integer eu magna, ullamcorper mus vel nunc',
+        imgUrl: require('../../assets/images/home/users/pic19.jpg')
+      },{
+        demoId: 8,
+        category: 1,
+        name: 'demo08',
+        detailUrl: '/',
+        title: 'dolor suspendisse quis non',
+        desc: 'Est sit integer eu magna, ullamcorper mus vel nunc',
+        imgUrl: require('../../assets/images/home/users/pic20.jpg')
+      },],
       homeBannerSwiperOptions: {
         autoplay: true,
         loop: true,
@@ -136,16 +254,10 @@ export default {
   },
 
   components: {
-    SwiperComponent
+    SwiperComponent,
+    UserItem,
+    DemoItem
   },
-
-  computed: {},
-
-  created() {},
-
-  mounted() {},
-
-  methods: {}
 }
 
 </script>
@@ -198,7 +310,7 @@ export default {
       margin: 0 auto;
       background-color: #fff;
       position: relative;
-      padding: 150px;
+      padding: 80px;
       &-left {
         background-color: #f3db28;
         position: absolute;
@@ -231,6 +343,34 @@ export default {
         }
       }
       &-right {
+        display: flex;
+        flex-wrap: wrap;
+        &-item {
+          flex: calc(50% - 20px) 0 0;
+          padding: 10px 10px 30px;
+        }
+        &-item:nth-child(2n) {
+          background-color: #56cfca;
+          .user-item {
+            &-info {
+              &-name a,
+              &-motto {
+                color: #fff;
+              }
+              &-name {
+                a:hover {
+                  color: #000;
+                }
+              }
+            }
+          }
+        }
+
+        &-content {
+          width: 100%;
+          box-sizing: border-box;
+        }
+
         h2 {
           line-height: 56px;
           font-size: 40px;
@@ -276,7 +416,7 @@ export default {
     }
   }
 }
-
+/* 通知动画 */ 
  @keyframes homeNotice {
   0% {
      transform: rotateX(0deg);
