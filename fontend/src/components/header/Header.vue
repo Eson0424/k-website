@@ -4,7 +4,7 @@
       <div class="header-content-setting">
         <div class="header-content-setting-wrap">
           <router-link to="/" class="header-content-setting-logo"></router-link>
-          <router-link to="/" class="header-content-setting-title"><span>P</span>rogram <span>M</span>ini <span>S</span>pace</router-link>
+          <router-link to="/" class="header-content-setting-title"><span>I</span>T <span>M</span>ini <span>S</span>pace</router-link>
         </div>
         <div class="header-content-setting-list">
           <ul class="header-content-setting-list-login">
@@ -46,7 +46,7 @@
         <li class="header-content-nav-list-item">
           <router-link to="/forum">FORUM</router-link>
         </li>
-        <li class="header-content-nav-list-item">HELP LINE : 19879265304</li>
+        <li class="header-content-nav-list-item">HELP LINE : +86 19879265304</li>
       </ul>
     </div>
   </div>

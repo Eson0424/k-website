@@ -1,44 +1,42 @@
 <template>
-  <div class="home">
+  <div class="home-page">
     <!-- Notice -->
-    <div class="home-notice">
-      <div class="home-notice-section section-first">这里是消息通知区域</div>
-      <div class="home-notice-section section-second">这里是消息通知区域</div>
-      <div class="home-notice-section section-third">这里是消息通知区域</div>
-      <div class="home-notice-section section-fourth">这里是消息通知区域</div>
-    </div>
+    <MessageNoticeComponent 
+      :messageData="messages"
+      class="home-page-notice"
+    />
     <!-- banner -->
     <SwiperComponent 
       :swiperOptions="homeBannerSwiperOptions"
       :bannerArr="bannerArr"
       :bannerSwiper="bannerSwiper"
       slideHeight="750px"
-      class="home-banner"
+      class="home-page-banner"
     />
     <!-- content -->
-    <div class="home-content">
-      <div class="home-content-section">
-        <div class="home-content-section-left">
+    <div class="home-page-content">
+      <div class="home-page-content-section">
+        <div class="home-page-content-section-left">
           <small> introducing</small>
           <h2>Shortly About Us</h2>
         </div>
-        <div class="home-content-section-right">
+        <div class="home-page-content-section-right">
           <h2>The standard chunk of Lorem Ipsum used since the 1500s. </h2>
           <p class="subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
           <p class="desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
         </div>
       </div>
-      <div class="home-content-ads"></div>
-      <div class="home-content-section">
-        <div class="home-content-section-left">
+      <div class="home-page-content-ads"></div>
+      <div class="home-page-content-section">
+        <div class="home-page-content-section-left">
           <small> introducing</small>
           <h2>New User</h2>
         </div>
-        <ul class="home-content-section-right">
+        <ul class="home-page-content-section-right">
           <li
             v-for="item in users" 
             :key="item.userId" 
-            class="home-content-section-right-item"
+            class="home-page-content-section-right-item"
           >
             <UserItem 
               :userData="item"
@@ -46,19 +44,19 @@
           </li>
         </ul>
       </div>
-      <div class="home-content-info"></div>
-      <div class="home-content-section">
-        <div class="home-content-section-left">
+      <div class="home-page-content-info"></div>
+      <div class="home-page-content-section">
+        <div class="home-page-content-section-left">
           <small> introducing</small>
           <h2>Posted Demo</h2>
         </div>
-        <div class="home-content-section-right">
-          <div class="home-content-section-right-setting"></div>
-          <ul class="home-content-section-right-content">
+        <div class="home-page-content-section-right">
+          <div class="home-page-content-section-right-setting"></div>
+          <ul class="home-page-content-section-right-content">
             <li
               v-for="item in demos"
               :key="item.demoId"
-              class="home-content-section-right-content-item"
+              class="home-page-content-section-right-content-item"
             >
               <DemoItem 
                 :demoData="item"
@@ -72,13 +70,15 @@
 </template>
 
 <script>
+import MessageNoticeComponent from '@/components/share/MessageNoticeComponent.vue'
 import SwiperComponent from '@/components/share/SwiperComponent.vue'
 import UserItem from '@/components/share/UserItem.vue'
 import DemoItem from '@/components/share/DemoItem.vue'
 export default {
-  name: 'Name',
+  name: 'Home',
   data () {
     return {
+      messages: {},
       bannerArr: [{
         id: 1,
         name: 'web',
@@ -254,6 +254,7 @@ export default {
   },
 
   components: {
+    MessageNoticeComponent,
     SwiperComponent,
     UserItem,
     DemoItem
@@ -262,45 +263,8 @@ export default {
 
 </script>
 <style lang='less'>
-.home {
+.home-page {
   width: 100%;
-  &-notice {
-    width: 100%;
-    height: 24px;
-    position: relative;
-    transform-style: preserve-3d;
-    animation: homeNotice 10s linear infinite;
-    &-section {
-      width: 100%;
-      height: 24px;
-      line-height: 24px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      text-align: center;
-    }
-    .section-first {
-      background-color: rgb(16, 233, 211);
-      color: #fff;
-      z-index: 1;
-      transform: translate3d(0, 0, 12px);
-    }
-    .section-second {
-      background-color: rgb(177, 20, 216);
-      color: #fff;
-      transform: translate3d(0, 12px, 0) rotateX(-90deg);
-    }
-    .section-third {
-      background-color: rgb(161, 211, 25);
-      color: #fff;
-      transform: translate3d(0, -12px, 0) rotateX(90deg);
-    }
-    .section-fourth {
-      background-color: rgb(233, 196, 30);
-      color: #fff;
-      transform: translate3d(0, 0, -12px) rotateX(180deg);
-    }
-  }
   &-content {
     width: 100%;
     background-color: #f1f1f1;
@@ -416,22 +380,4 @@ export default {
     }
   }
 }
-/* 通知动画 */ 
- @keyframes homeNotice {
-  0% {
-     transform: rotateX(0deg);
-   }
-  25% {
-     transform: rotateX(-90deg);
-   }
-  50% {
-     transform: rotateX(-180deg);
-   }
-  75% {
-     transform: rotateX(-270deg);
-   }
-  100% {
-     transform: rotateX(-360deg);
-   }
- }
 </style>
